@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatma Karpinar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .nav-link.active {
+            color:blueviolet !important;
+        }
+
+        .app_about_me-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .app_about_me-text {
+            flex: 1;
+        }
+
+        .app__about_me_image {
+            width: 450px;
+            height: 450px;
+            margin-left: 20px;
+        }
+
+        /* Ekran boyutuna göre resim ve metin düzenlemesi */
+        @media (max-width: 768px) {
+            .app_about_me-info {
+                flex-direction: column;
+            }
+
+            .app__about_me_image {
+                margin-left: 0;
+                margin-top: 20px;
+                float: none;
+                width: 100%;
+                height:max-content;
+                max-width: 450px;
+            }
+            .app__about_image{
+              margin-left: 0;
+                margin-top: 20px;
+                float: none;
+                width: 100%;
+                height:max-content;
+                max-width: 450px;
+            }
+        }
+        p{
+          font-size: 35px;
+         
+        }
+        h1{
+          font-weight: bold;
+        }
+        .btn-lg {
+            width: 250px;
+            height: 60px;
+            padding: 0;
+            font-size: 1.5rem;
+            margin-left: 45px;
+            display: inline-block;
+            background-color: #51a69f;
+        }
+         .button-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: 400px;
+        }
+
+        .button-container button {
+            margin-left: 20px;
+        }
+        
+             
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="image/Logo (1).png" alt="Logo" height="50">
+              </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav fw-bold ">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skill">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="background-color: blueviolet; color: #ffffff; border-radius: 20%;" href="#contact" type="button">Contact me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>  
+    <br><br><br><br><br><br><br><br><br>
+    <div class="container app_about_me">
+        <div class="app_about_me-info">
+
+            <div class="app_about_me-text" id="home" >
+                <h4>Hey, I'am Fatma</h4><br>
+                <h1>I'm a junior software developer</h1><br><br>
+                <p>I have a degree in computer engineering and I am currently doing an internship in the web field. I am making an effort to improve in this field..!</p><br>
+                <button type="button" class="btn btn-primary btn-lg" style=" margin-left:auto; background-color: blueviolet; color: #ffffff; border-radius: 10%; width: auto;">Get In Tech</button>
+            </div>
+
+            <img class="app__about_me_image" src="image/1111.jpeg" alt="My photo" />
+            
+        </div>
+            
+    </div>
+    
+
+
+   <div>
+    <section class="container py-5" id="skill">
+        <div class="py-5">
+        <h4 class="fw-bold">My Skills</h4>
+        <h2 class="fw-bold">My Expertise</h2>
+   </div>
+        <br><br>
+
+        <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-6 mb-4">
+                <img class="img-fluid" src="image/skill1.png">
+              </div>
+              <div class="col-md-3 col-sm-6 mb-4">
+                <img class="img-fluid" src="image/skill2.png">
+              </div>
+              <div class="col-md-3 col-sm-6 mb-4">
+                <img class="img-fluid" src="image/skill3.png">
+              </div>
+              <div class="col-md-3 col-sm-6 mb-4">
+                <img class="img-fluid" src="image/skill4.png">
+              </div>
+            </div>
+          </div>
+        
+        <!-- <div style="display: flex; flex-direction: column;">
+          <img class="img-fluid" src="image/skill1.png" style="margin-right: 5%; height: 20%; width: 20%;">
+          <img class="img-fluid" src="image/skill2.png" style="margin-right: 5%; height: 20%; width: 20%;" >
+          <img class="img-fluid" src="image/skill3.png" style="margin-right: 5%; height: 20%; width: 20%;" >
+          <img class="img-fluid" src="image/skill4.png" style="margin-right: 5%; height: 20%; width: 20%;" >
+        </div>
+        <div class="card" style="width: 15rem;">
+            <img src="image/skill1.png " class="card-img-top" alt="...">
+            <img src="image/skill2.png " class="card-img-top" alt="...">
+            <img src="image/skill3.png " class="card-img-top" alt="...">
+            <img src="image/skill4.png " class="card-img-top" alt="...">
+            <div class="card-body">
+          </div> -->
+      </section>
+    </div><br><br>
+
+
+
+    <section class="container py-5" id="about">
+      <div class="text-center py-5">
+        <h1 class="fw-bold" style="margin-right:0%">About Me?</h1></div>
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img fluid"  style="height: 70%; width: 110%;" src="image/2222.jpeg">
+        </div>
+        <div class="col-lg-7 offset-lg-1 " style="margin-top:6%;">
+          <h2 style="font-weight:normal;">Hello, I'm Fatma Karpinar. I am a junior software developer who graduated from computer engineering. I am currently doing 
+            an internship in the web field and then my job search process begins. I am trying to improve myself more and to move to higher levels in this field.</h2>
+        </div>
+      </div>
+
+
+      
+      <section class="container py-5 " id="portfolio">
+        <div class="py-5">
+            <h5 class="fw-bold">Recent Project</h5>
+          <h1 class="fw-bold">Project</h1>
+        </div>
+        <div class="image-container d-flex justify-content-center flex-wrap"></div>
+        <img class="img-fluid" src="image/portfolio1.PNG" style="margin-right: 10%" title="HTML">
+        <img class="img-fluid" src="image/portfolio2.PNG" style="margin-right: 10%" title="HTML">
+        <img class="img-fluid" src="image/portfolio3.PNG" style="margin-right: 10%" title="HTML">
+      </section>
+
+
+      <section class="container py-5" id="testimonials">
+        <div class="py-5">
+            <h5 class="fw-bold">Clients Feedback</h5>
+          <h1 class="fw-bold">Customer testimonials</h1><br><br>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-6 mb-4" style="margin-right: 5%">
+                <img class="img-fluid" src="image/testimonial1.svg" >
+              </div>
+              <div class="col-md-3 col-sm-6 mb-4" style="margin-right: 5%">
+                <img class="img-fluid" src="image/testimonial2.svg">
+              </div>
+              <div class="col-md-3 col-sm-6 mb-4" style="margin-right: 5%">
+                <img class="img-fluid" src="image/testimonial3.svg">
+              </div>
+            </div>
+          </div>
+      </section>
+
+
+      <section class="container py-5" id="contact">
+        <div class="text-center py-5">
+          <h1 class="fw-bold">Contact</h1>
+        </div>
+        <div class="col-xxl col-xl-7 col-lg-8 col-md-9 col-sm-10 col-11 mx-auto">
+          <form >
+            <div class="mb-3">
+              <label class="form-label">First Name</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Last Name</label>
+                <input type="text" class="form-control">
+              </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Phone Number</label>
+                <input type="phone" class="form-control">
+              </div>
+            <div class="mb-3">
+              <label class="form-label">Subject</label>
+              <input type="text" class="form-control">
+            </div>
+            <label for="choose-topic">Choose a topic:</label>
+            <select id="choose-topic" class="form-control">
+              <option value=""></option>
+              <option value="projects">Projects</option>
+              <option value="about">About</option>
+              <option value="suggestion/request">Suggestion/Request</option>
+              <option value="complaint">Complaint</option>
+            </select>
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea type="text" class="form-control" row="10"></textarea>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" name="I accept the terms" id="accept-terms">
+                <label for="accept-terms">I accept the terms</label>
+              </div>
+              <section class="container">
+                <div class="text-center ">
+                    <button type="button" class="btn btn-primary btn-lg" style=" margin-right: 8%; padding: 1%; background-color: blueviolet; color: #ffffff; border-radius: 10%; width: auto;height: auto;">Submit</button>
+                </div>
+              </section><Br>
+            
+
+            <section class="container " id="socialmedia">
+                <div class="text-center">
+                    <a href = "https://www.instagram.com/ftmkarpinar/" target="blank"><img class="app_projects_image" style="width:5%; height:5%;" src="image/Instagram.svg"/> </a>
+                    <a href="https://www.linkedin.com/in/fatmakarpinar/"target="_blank"><img class="app__projects_image" style="width:5%; height:5%;" src="image/LinkedIn.svg"/></a>
+                    <a href="https://twitter.com/ftmkarpinar"target="_blank"><img class="app__projects_image" style="width:5%; height:5%;" src="image/Twitter.svg" /> </a>
+                    <a href="https://tr-tr.facebook.com/"target="_blank"><img class="app__projects_image" style="width:5%; height:5%;" src="image/Facebook.svg"/></a>
+                  </div>
+            </section>
+
+              
+          </form>
+        </div>
+      </section><br><br><br><br><br><br>
+
+
+    
+
+
+    <section>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top2">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="image/Logo (1).png" alt="Logo" height="30">
+                  </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav fw-bold ">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skill">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Testimonials</a>
+                        </li>
+    </section>
+     
+      <footer >
+        <div class="text-center">
+          <h6>Made with♥ by Karpinar</h6>
+
+        </div>
+      </footer>
+      
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
